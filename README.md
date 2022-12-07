@@ -175,7 +175,7 @@ But the STL files can also be downloaded from the directory [Designs](https://gi
 ![PCB Front](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node-Front-Open.png)
 
 ## Security-Node Back
-![PCB Front](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node%20PCB%20Back.png)
+![PCB Front](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node-Back.png)
 
 
 

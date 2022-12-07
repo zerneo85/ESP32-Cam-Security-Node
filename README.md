@@ -49,6 +49,119 @@ In the directory [Code](https://github.com/zerneo85/ESP32-Cam-Security-Node/tree
 - To fix false alarms of the PIR & Doppler sensor i use a delayed_on value, for the PIR sensor it solves the false alarms.
 - The Doppler sensor still requires some troubleshooting to get more stable.
 
+```
+esphome:
+  name: livingroom-security-node
+  platform: ESP32
+  board: esp32cam
+
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+  # Optional manual IP
+  manual_ip:
+    static_ip: !secret static_ip_livingroom-security-node
+    gateway: !secret gateway
+    subnet: !secret subnet
+    dns1: !secret dns1
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Livingroom-Seurity-Node"
+    password: !secret hotspot_livingroom-security-node
+
+captive_portal:
+
+# Enable logging
+logger:
+  level: INFO
+
+# Enable Home Assistant API
+ota:
+  password: !secret ota_livingroom-security-node
+
+
+
+# ESP32 Cam configuration entry
+esp32_camera:
+  external_clock:
+    pin: GPIO0
+    frequency: 20MHz
+  i2c_pins:
+    sda: GPIO26
+    scl: GPIO27
+  data_pins: [GPIO5, GPIO18, GPIO19, GPIO21, GPIO36, GPIO39, GPIO34, GPIO35]
+  vsync_pin: GPIO25
+  href_pin: GPIO23
+  pixel_clock_pin: GPIO22
+  power_down_pin: GPIO32
+  vertical_flip: true
+  resolution: 1280x1024
+  jpeg_quality: 10
+  
+# Image settings
+  name: Livingroom Camera
+
+
+# Binary Sensors PIR & Doppler configuration entry
+binary_sensor:
+  - platform: gpio
+    pin: GPIO13
+    name: "Livingroom PIR Sensor"
+    device_class: motion
+    filters:
+      - delayed_on: 3000ms    
+  - platform: gpio
+    pin: GPIO15
+    name: "Livingroom Doppler Sensor"
+    device_class: motion
+    filters:
+      - delayed_on: 3000ms
+
+# Output ESP32 Cam light & Buzzer rtttl configuration entry
+output:
+  - platform: gpio
+    pin: GPIO4
+    id: gpio_4
+  - platform: ledc
+    pin: GPIO12
+    id: rtttl_out
+    channel: 2
+
+light:
+  - platform: binary
+    output: gpio_4
+    name: "Livingroom Camera Light"
+    
+rtttl:
+  output: rtttl_out
+  on_finished_playback:
+    - logger.log: 'Song ended!'
+
+api:
+  services:
+    - service: play_rtttl
+      variables:
+        song_str: string
+      then:
+        - rtttl.play:
+            rtttl: !lambda 'return song_str;'
+
+
+# Temperature configuration entry
+dallas:
+  - pin: GPIO14
+
+sensor:
+  - platform: dallas
+    address: 0x5B3C01D6079A2228
+    name: "Livingroom Temperature Sensor"
+    filters:
+      - offset: -9.6
+
+
+```
 
 # 3D Print STL files
 I published the project on Thingiverse, https://www.thingiverse.com/thing:5064859

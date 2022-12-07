@@ -37,7 +37,7 @@ The micro USB DIP i soldered on A4 for ground (i connected it to row 3) and A8 f
 
 
 # ESP Home YAML file for Home Assistant
-In the directory Code you can find the YAML file that i made and use in ESP Home in Home Assistant. Some important points are:
+In the directory [Code](https://github.com/zerneo85/ESP32-Cam-Security-Node/tree/main/Code) you can find the YAML file that i made and use in ESP Home in Home Assistant. Some important points are:
 
 - I use the secrets file in ESP Home for all sensitive or device related data.
 - The file makes use of the ds18b20 temperature sensor and not the DHT11 sensor.
@@ -49,4 +49,4 @@ In the directory Code you can find the YAML file that i made and use in ESP Home
 # 3D Print STL files
 I published the project on Thingiverse, https://www.thingiverse.com/thing:5064859
 
-But the STL files can also be downloaded from the directory Designs.
+But the STL files can also be downloaded from the directory [Designs](https://github.com/zerneo85/ESP32-Cam-Security-Node/tree/main/Designs).

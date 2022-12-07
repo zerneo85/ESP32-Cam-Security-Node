@@ -33,10 +33,10 @@ For power & ground i sewed a wire on row 3 & 8 over the lengt of the PCB.
 The micro USB DIP i soldered on A4 for ground (i connected it to row 3) and A8 for 5v power.
 
 ## PCB Front
-!(https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node%20PCB%20Front.png)
+![PCB Front](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node%20PCB%20Front.png)
 
 ## PCB Back
-!(https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node%20PCB%20Back.png)
+![PCB Back](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node%20PCB%20Back.png)
 
 
 

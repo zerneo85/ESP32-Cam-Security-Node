@@ -39,7 +39,6 @@ The micro USB DIP i soldered on A4 for ground (i connected it to row 3) and A8 f
 ![PCB Back](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node%20PCB%20Back.png)
 
 
-
 # ESP Home YAML file for Home Assistant
 In the directory [Code](https://github.com/zerneo85/ESP32-Cam-Security-Node/tree/main/Code) you can find the YAML file that i made and use in ESP Home in Home Assistant. Some important points are:
 
@@ -167,3 +166,57 @@ sensor:
 I published the project on Thingiverse, https://www.thingiverse.com/thing:5064859
 
 But the STL files can also be downloaded from the directory [Designs](https://github.com/zerneo85/ESP32-Cam-Security-Node/tree/main/Designs).
+
+# Images – 3D print & Sensors & PCB
+## Security-Node Front Closed
+![PCB Front](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node-Front-Closed.png)
+
+## Security-Node Front Open
+![PCB Front](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node-Front-Open.png)
+
+## Security-Node Back
+![PCB Front](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node%20PCB%20Back.png)
+
+
+
+# Images – STL Screenshots
+## Security-Node body STL screenshot
+![Security-Node body STL screenshot](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node%20body%20STL%20screenshot.png)
+
+## Security-Node ESP32 Cam & AM312 Lid STL screenshot
+![Security-Node ESP32 Cam & AM312 Lid STL screenshot](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node%20ESP32%20Cam%20%26%20AM312%20Lid%20STL%20screenshot.png)
+
+## Security-Node RCWL Doppler Lid STL screenshot
+![Security-Node RCWL Doppler Lid STL screenshot](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node%20RCWL%20Doppler%20Lid%20STL%20screenshot.png)
+
+## Security-Node ESP32 Cam & HC-SR501 Lid STL screenshot
+![Security-Node ESP32 Cam & HC-SR501 Lid STL screenshot](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node%20ESP32%20Cam%20%26%20HC-SR501%20Lid%20STL%20screenshot.png)
+
+
+# Images – 3D print Pictures
+## Security-Node Body Front
+![Security-Node Body Front](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node-Body-Front.png)
+
+## Security-Node Body Back
+![Security-Node Body Back](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node-Body-Back.png)
+
+## Security-Node RCWL Doppler Lid
+![Security-Node RCWL Doppler Lid](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node-Doppler-Lid-Front.png)
+
+## Security-Node ESP32 Cam & AM312 Lid
+![Security-Node ESP32 Cam & AM312 Lid](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node-AM312-Lid.png)
+
+## Security-Node ESP32 Cam & HC-SR501 Lid
+![Security-Node ESP32 Cam & HC-SR501 Lid](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node-HCSR501-Lid.png)
+
+
+# Images – Sensors & PCB
+## PCB empty
+![PCB Empty](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/PCB-Empty.png)
+
+## PCB Back
+![PCB Back](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node-PCB-Back.png)
+
+## PCB Front
+![PCB Front](https://github.com/zerneo85/ESP32-Cam-Security-Node/blob/main/Images/Security-Node-PCB-Front.png)
+

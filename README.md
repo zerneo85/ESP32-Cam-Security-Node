@@ -10,7 +10,6 @@ Besides the use of security (Cam & Motion detection) it also services roles in l
 As my partner often points out i have a issue with trying to improve everything.
 So if you have any suggestions or improvements i would be very happy to implement them! While writing this i realizes i could add a RGB Led and i will try to implement this short term. I would be very happy if someone could help with the RCWL-0516 because it is still giving false triggers……
 
-If you like to help or give suggestions use the form below.
 
 
 # Sensors & Components
